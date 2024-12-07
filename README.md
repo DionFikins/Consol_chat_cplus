@@ -28,21 +28,21 @@ class Accounts {
         ~Accounts();
 
         /*Геттеры для получения данных о конкретном пользователе*/
-        const int GetID() const;
-        const std::string GetLogin() const;
-        const std::string GetPass() const;
-        const std::string GetName() const;
-        const bool GetEnable() const;
+        const int GetID() const; // получить id пользователя
+        const std::string GetLogin() const; // получить логин пользователя
+        const std::string GetPass() const; // получить пароль пользователя
+        const std::string GetName() const; // получить имя пользователя
+        const bool GetEnable() const; // получить доступность пользователя
         /*------------------------------------------------------*/
 
         // Получение сведений по каждому пользователю без его id и без доступности пользователя
         const std::string GetUserData() const;
 
         /*Сеттеры для получения данных о конкретном пользователе*/
-        void SetLogin(std::string login);
-        void SetPass(std::string pass);
-        void SetName(std::string name);
-        void SetEnable(bool enable);
+        void SetLogin(std::string login); // изменить логин пользователя
+        void SetPass(std::string pass); // изменить пароль пользователя
+        void SetName(std::string name); // изменить имя пользователя
+        void SetEnable(bool enable); // изменить статус доступности пользователя
         /*-----------------------------------------------------*/
 };
 
